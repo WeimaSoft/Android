@@ -17,7 +17,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements Runnable {
 
-	private final String[] menuItems = { "选项1", "选项2", "选项3", "选项4" };
+	private final String[] menuItems = { "選項1", "選項2", "選項3", "選項4" };
 	private ProgressDialog dialog;
 	private ArrayList<String> selectedItems = new ArrayList<String>();
 
@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements Runnable {
 		@Override
 		public void onClick(View v) {
 			dialog = new ProgressDialog(MainActivity.this);
-			dialog.setTitle("读取进度条示例");
+			dialog.setTitle("讀取進度框");
 			dialog.setIndeterminate(true);
 			dialog.setCancelable(true);
 			dialog.show();
@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements Runnable {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder= getBuilder("多项选择");
+			AlertDialog.Builder builder= getBuilder("多項選擇");
 			builder.setMultiChoiceItems(menuItems, new boolean[]{false,false,false,false}, new OnMultiChoiceClickListener(){
 
 				@Override
@@ -84,11 +84,11 @@ public class MainActivity extends Activity implements Runnable {
 				}
 				
 			});
-			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					String mString = "您选择了：";
+					String mString = "您選擇的是";
 					for (String item : selectedItems) {
 						mString += item + " ";
 					}
@@ -104,10 +104,10 @@ public class MainActivity extends Activity implements Runnable {
 		@Override
 		public void onClick(View v) {
 			dialog = new ProgressDialog(MainActivity.this);
-			dialog.setTitle("进度条示例");
+			dialog.setTitle("進度條框");
 			dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 			dialog.setMax(100);
-			dialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
+			dialog.setButton(DialogInterface.BUTTON_POSITIVE, "確定", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -129,12 +129,12 @@ public class MainActivity extends Activity implements Runnable {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("单项选择");
+			AlertDialog.Builder builder = getBuilder("單項選擇框");
 			builder.setSingleChoiceItems(menuItems, 0, new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了第" + (which + 1) + "项,值为" + menuItems[which]);
+					showDialog("您選擇的是第" + (which + 1) + "項,選擇的值為" + menuItems[which]);
 				}
 			});
 			builder.create().show();
@@ -145,12 +145,12 @@ public class MainActivity extends Activity implements Runnable {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("请选择列表项");
+			AlertDialog.Builder builder = getBuilder("列表框");
 			builder.setItems(menuItems, new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了第" + (which + 1) + "项,值为" + menuItems[which]);
+					showDialog("您選擇的是第" + (which + 1) + "項,選擇的值為" + menuItems[which]);
 				}
 			});
 			builder.create().show();
@@ -162,20 +162,20 @@ public class MainActivity extends Activity implements Runnable {
 		@Override
 		public void onClick(View v) {
 			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-			builder.setTitle("你确定要离开吗？");
-			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			builder.setTitle("多項按鈕框");
+			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了确定");
+					showDialog("您選擇的是確定");
 				}
 			});
 
-			builder.setNeutralButton("其实我也不知道", new DialogInterface.OnClickListener() {
+			builder.setNeutralButton("其實我也不知道", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("没想到你也不知道");
+					showDialog("原來你也不知道");
 
 				}
 			});
@@ -184,7 +184,7 @@ public class MainActivity extends Activity implements Runnable {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了取消");
+					showDialog("您選擇了取消");
 
 				}
 			});
@@ -195,12 +195,12 @@ public class MainActivity extends Activity implements Runnable {
 	private OnClickListener okCancelListner = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("你确定要离开吗？");
-			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			AlertDialog.Builder builder = getBuilder("確定取消");
+			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了确定");
+					showDialog("您選擇了確定");
 
 				}
 			});
@@ -209,7 +209,7 @@ public class MainActivity extends Activity implements Runnable {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("你选择了取消");
+					showDialog("您選擇了取消");
 
 				}
 			});
