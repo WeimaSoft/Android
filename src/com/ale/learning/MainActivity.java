@@ -1,11 +1,15 @@
 package com.ale.learning;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import android.R.string;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,6 +19,7 @@ public class MainActivity extends Activity implements Runnable {
 
 	private final String[] menuItems = { "选项1", "选项2", "选项3", "选项4" };
 	private ProgressDialog dialog;
+	private ArrayList<String> selectedItems = new ArrayList<String>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +35,15 @@ public class MainActivity extends Activity implements Runnable {
 		setUpButtonListner(R.id.btnSingleOption, singleOptionListner);
 
 		setUpButtonListner(R.id.btnProgress, progressListner);
+
+		setUpButtonListner(R.id.btnMultipleOptions, multipleOptionsListner);
+		
+		setUpButtonListner(R.id.btnReadProgress, readProgressListner);
 	}
-	
-	public void run()
-	{
+
+	public void run() {
 		int progress = 0;
-		while(progress < 100){
+		while (progress < 100) {
 			try {
 				Thread.sleep(100);
 				progress++;
@@ -45,6 +53,51 @@ public class MainActivity extends Activity implements Runnable {
 			}
 		}
 	}
+
+	private OnClickListener readProgressListner = new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			dialog = new ProgressDialog(MainActivity.this);
+			dialog.setTitle("读取进度条示例");
+			dialog.setIndeterminate(true);
+			dialog.setCancelable(true);
+			dialog.show();
+		}
+	};
+	
+	private OnClickListener multipleOptionsListner = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			AlertDialog.Builder builder= getBuilder("多项选择");
+			builder.setMultiChoiceItems(menuItems, new boolean[]{false,false,false,false}, new OnMultiChoiceClickListener(){
+
+				@Override
+				public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+					if (isChecked) {
+						selectedItems.add(menuItems[which]);
+					}else
+					{
+						selectedItems.remove(menuItems[which]);
+					}
+				}
+				
+			});
+			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					String mString = "您选择了：";
+					for (String item : selectedItems) {
+						mString += item + " ";
+					}
+					showDialog(mString);
+				}
+			});
+			builder.create().show();
+		}
+	};
 
 	private OnClickListener progressListner = new OnClickListener() {
 
@@ -67,7 +120,7 @@ public class MainActivity extends Activity implements Runnable {
 				}
 			});
 			dialog.show();
-			
+
 			new Thread(MainActivity.this).start();
 		}
 	};
