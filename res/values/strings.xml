@@ -3,5 +3,12 @@
 
     <string name="app_name">Dialog Demo</string>
     <string name="lblOKCancel">确定取消信息框</string>
+    <string name="lblMultipleButtons">多个按钮信息框</string>
+    <string name="lblList">列表框</string>
+    <string name="lblProgress">进度条框</string>
+    <string name="lblSingleOption">单项选择列表框</string>
+    <string name="lblMultipleOptions">多项选择列表框</string>
+    <string name="lblCustomize">自定义布局</string>
+    <string name="lblReadProgress">读取进度框</string>
 
 </resources>

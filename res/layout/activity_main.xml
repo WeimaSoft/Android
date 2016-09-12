@@ -2,12 +2,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.ale.learning.MainActivity" >
 
     <Button
-        android:id="@+id/lblOKCancel"
+        android:id="@+id/btnOKCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lblOKCancel" />
+    
+    <Button
+        android:id="@+id/btnMultipleButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMultipleButtons" />
+    
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblList" />
+    
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblProgress" />
+    
+    <Button
+        android:id="@+id/btnSingleOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSingleOption" />
+    
+    <Button
+        android:id="@+id/btnMultipleOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMultipleOptions" />
+    
+    <Button
+        android:id="@+id/btnCustomize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCustomize" />
+    
+    <Button
+        android:id="@+id/btnReadProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblReadProgress" />
 
 </LinearLayout>
