@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import android.R.string;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnMultiChoiceClickListener;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -39,6 +42,8 @@ public class MainActivity extends Activity implements Runnable {
 		setUpButtonListner(R.id.btnMultipleOptions, multipleOptionsListner);
 		
 		setUpButtonListner(R.id.btnReadProgress, readProgressListner);
+		
+		setUpButtonListner(R.id.btnCustomize, customizeListner);
 	}
 
 	public void run() {
@@ -54,6 +59,37 @@ public class MainActivity extends Activity implements Runnable {
 		}
 	}
 
+	private OnClickListener customizeListner = new OnClickListener(){
+
+		@Override
+		public void onClick(View v) {
+			AlertDialog.Builder builder = getBuilder("Customized Dialog");
+			LayoutInflater fac = LayoutInflater.from(MainActivity.this);
+			final View dialogView = fac.inflate(R.layout.customize_layout, null);
+			builder.setView(dialogView);
+			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					showDialog("您選擇了確定");
+
+				}
+			});
+
+			builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					showDialog("您選擇了取消");
+
+				}
+			});
+			
+			builder.create().show();
+		}
+		
+	};
+	
 	private OnClickListener readProgressListner = new OnClickListener() {
 		
 		@Override
