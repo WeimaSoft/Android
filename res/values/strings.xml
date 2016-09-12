@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Dialog Demo</string>
+    <string name="title_activity_main">Dialog Demo</string>
     <string name="lblOKCancel">确定取消信息框</string>
     <string name="lblMultipleButtons">多个按钮信息框</string>
     <string name="lblList">列表框</string>
@@ -10,5 +10,6 @@
     <string name="lblMultipleOptions">多项选择列表框</string>
     <string name="lblCustomize">自定义布局</string>
     <string name="lblReadProgress">读取进度框</string>
+    <string name="title_activity_demo_selection">Demo Selection</string>
 
 </resources>
