@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ale.learning.MainActivity" >
+
+    <Button
+        android:id="@+id/btnDrawString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDrawString" />
+    
+    <Button
+        android:id="@+id/btnDrawUnRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDrawUnRule" />
+    
+    <Button
+        android:id="@+id/btnDrawPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDrawPicture" />
+    
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPlay" />
+</LinearLayout>

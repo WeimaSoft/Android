@@ -1,6 +1,7 @@
 package com.ale.learning;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -17,17 +18,22 @@ public class DemoSelectionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_demo_selection);
 		
-		setUpButtonListner(R.id.btnDialogDemo, dialogDemoListner);
+		setUpButtonListner(R.id.btnDialogDemo, setUpClickListner(MainActivity.class));
+		
+		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeViewActivity.class));
 	}
 	
-	private OnClickListener dialogDemoListner = new OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			Intent intent = new Intent(DemoSelectionActivity.this, MainActivity.class);
-			startActivity(intent);
-		}
-	};
+	private OnClickListener setUpClickListner(final Class<?> classRef)
+	{
+		return new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(DemoSelectionActivity.this, classRef);
+				startActivity(intent);
+			}
+		};
+	}
 	
 	private void setUpButtonListner(int buttonId, OnClickListener listner) {
 		Button btnList = (Button) findViewById(buttonId);

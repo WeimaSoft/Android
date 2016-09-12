@@ -3,6 +3,7 @@ package com.ale.learning;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import android.R.bool;
 import android.R.string;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -20,7 +21,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements Runnable {
 
-	private final String[] menuItems = { "選項1", "選項2", "選項3", "選項4" };
+	private final String[] menuItems = { "Menu Item 1", "Menu Item 2", "Menu Item 3", "Menu Item 4" };
 	private ProgressDialog dialog;
 	private ArrayList<String> selectedItems = new ArrayList<String>();
 
@@ -40,9 +41,9 @@ public class MainActivity extends Activity implements Runnable {
 		setUpButtonListner(R.id.btnProgress, progressListner);
 
 		setUpButtonListner(R.id.btnMultipleOptions, multipleOptionsListner);
-		
+
 		setUpButtonListner(R.id.btnReadProgress, readProgressListner);
-		
+
 		setUpButtonListner(R.id.btnCustomize, customizeListner);
 	}
 
@@ -59,7 +60,7 @@ public class MainActivity extends Activity implements Runnable {
 		}
 	}
 
-	private OnClickListener customizeListner = new OnClickListener(){
+	private OnClickListener customizeListner = new OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
@@ -67,71 +68,42 @@ public class MainActivity extends Activity implements Runnable {
 			LayoutInflater fac = LayoutInflater.from(MainActivity.this);
 			final View dialogView = fac.inflate(R.layout.customize_layout, null);
 			builder.setView(dialogView);
-			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇了確定");
-
-				}
-			});
-
-			builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇了取消");
-
-				}
-			});
-			
-			builder.create().show();
+			setUpButtons(builder, false);
 		}
-		
+
 	};
-	
+
 	private OnClickListener readProgressListner = new OnClickListener() {
-		
+
 		@Override
 		public void onClick(View v) {
 			dialog = new ProgressDialog(MainActivity.this);
-			dialog.setTitle("讀取進度框");
+			dialog.setTitle("Dialog Progress");
 			dialog.setIndeterminate(true);
 			dialog.setCancelable(true);
 			dialog.show();
 		}
 	};
-	
+
 	private OnClickListener multipleOptionsListner = new OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder= getBuilder("多項選擇");
-			builder.setMultiChoiceItems(menuItems, new boolean[]{false,false,false,false}, new OnMultiChoiceClickListener(){
+			AlertDialog.Builder builder = getBuilder("Dialog Multiple Options");
+			builder.setMultiChoiceItems(menuItems, new boolean[] { false, false, false, false },
+					new OnMultiChoiceClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which, boolean isChecked) {
 					if (isChecked) {
 						selectedItems.add(menuItems[which]);
-					}else
-					{
+					} else {
 						selectedItems.remove(menuItems[which]);
 					}
 				}
-				
+
 			});
-			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
-				
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					String mString = "您選擇的是";
-					for (String item : selectedItems) {
-						mString += item + " ";
-					}
-					showDialog(mString);
-				}
-			});
-			builder.create().show();
+			setUpButtons(builder, false);
 		}
 	};
 
@@ -140,16 +112,16 @@ public class MainActivity extends Activity implements Runnable {
 		@Override
 		public void onClick(View v) {
 			dialog = new ProgressDialog(MainActivity.this);
-			dialog.setTitle("進度條框");
+			dialog.setTitle("Dialog Progress");
 			dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 			dialog.setMax(100);
-			dialog.setButton(DialogInterface.BUTTON_POSITIVE, "確定", new DialogInterface.OnClickListener() {
+			dialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 				}
 			});
-			dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "取消", new DialogInterface.OnClickListener() {
+			dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -165,14 +137,15 @@ public class MainActivity extends Activity implements Runnable {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("單項選擇框");
+			AlertDialog.Builder builder = getBuilder("Dialog Single Option");
 			builder.setSingleChoiceItems(menuItems, 0, new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇的是第" + (which + 1) + "項,選擇的值為" + menuItems[which]);
+					showDialog("You select item " + (which + 1) + " the value is " + menuItems[which]);
 				}
 			});
+
 			builder.create().show();
 		}
 	};
@@ -181,12 +154,12 @@ public class MainActivity extends Activity implements Runnable {
 
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("列表框");
+			AlertDialog.Builder builder = getBuilder("Dialog List");
 			builder.setItems(menuItems, new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇的是第" + (which + 1) + "項,選擇的值為" + menuItems[which]);
+					showDialog("You select item " + (which + 1) + " the value is " + menuItems[which]);
 				}
 			});
 			builder.create().show();
@@ -197,62 +170,49 @@ public class MainActivity extends Activity implements Runnable {
 	private OnClickListener multiButtonsListner = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-			builder.setTitle("多項按鈕框");
-			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇的是確定");
-				}
-			});
-
-			builder.setNeutralButton("其實我也不知道", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("原來你也不知道");
-
-				}
-			});
-
-			builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇了取消");
-
-				}
-			});
-			builder.create().show();
+			AlertDialog.Builder builder = getBuilder("Dialog Multiple Buttons");
+			setUpButtons(builder, true);
 		}
 	};
 
 	private OnClickListener okCancelListner = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			AlertDialog.Builder builder = getBuilder("確定取消");
-			builder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇了確定");
-
-				}
-			});
-
-			builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					showDialog("您選擇了取消");
-
-				}
-			});
-			builder.create().show();
+			AlertDialog.Builder builder = getBuilder("Dialog OK Cancel");
+			setUpButtons(builder, false);
 		}
-
 	};
+
+	private void setUpButtons(Builder builder, Boolean addNeturalBtn) {
+		builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				showDialog("You select Yes");
+
+			}
+		});
+		builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				showDialog("You select No");
+
+			}
+		});
+
+		if (addNeturalBtn) {
+			builder.setNeutralButton("Netural", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					showDialog("You select Netural");
+
+				}
+			});
+		}
+		builder.create().show();
+	}
 
 	private void setUpButtonListner(int buttonId, OnClickListener listner) {
 		Button btnList = (Button) findViewById(buttonId);
