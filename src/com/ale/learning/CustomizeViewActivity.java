@@ -28,6 +28,8 @@ public class CustomizeViewActivity extends Activity {
 		startNewActivityWhenButtonClick(R.id.btnDrawString, FontActivity.class);
 		
 		startNewActivityWhenButtonClick(R.id.btnDrawUnRule, UnRuleActivity.class);
+		
+		startNewActivityWhenButtonClick(R.id.btnDrawPicture, DrawPictureActivity.class);
 	}
 
 	private void startNewActivityWhenButtonClick(int buttonId, final Class<?> newActivityCls) {

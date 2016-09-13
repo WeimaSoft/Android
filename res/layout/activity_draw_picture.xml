@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to_left" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to_right" />
+
+    <Button
+        android:id="@+id/buttonRotationLeft"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/left_turn" />
+
+    <Button
+        android:id="@+id/buttonRotationRight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/right_turn" />
+
+    <Button
+        android:id="@+id/buttonNarrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/minsize" />
+
+    <Button
+        android:id="@+id/buttonEnlarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maxsize" />
+
+</LinearLayout>

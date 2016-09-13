@@ -39,7 +39,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".FontActivity"
             android:label="@string/title_activity_font" >
@@ -49,7 +48,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".UnRuleActivity"
             android:label="@string/title_activity_UnRule" >
@@ -58,6 +56,10 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DrawPictureActivity"
+            android:label="@string/title_activity_draw_picture" >
         </activity>
     </application>
 
