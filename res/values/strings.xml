@@ -18,5 +18,12 @@
     <string name="lblPlay">Draw Play</string>
     <string name="title_activity_font">Draw Font</string>
     <string name="title_activity_UnRule">Draw UnRule</string>
+    <string name="title_activity_draw_picture">Draw Picture</string>
+    <string name="move_to_left">Move to Left</string>
+    <string name="move_to_right">Move to Right</string>
+    <string name="left_turn">Left turn</string>
+    <string name="right_turn">Right turn</string>
+    <string name="minsize">Minsize</string>
+    <string name="maxsize">MaxSize</string>
 
 </resources>
