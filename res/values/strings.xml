@@ -16,5 +16,6 @@
     <string name="lblDrawUnRule">Draw UnRule</string>
     <string name="lblDrawPicture">Draw Picture</string>
     <string name="lblPlay">Draw Play</string>
+    <string name="title_activity_font">Draw Font</string>
 
 </resources>
