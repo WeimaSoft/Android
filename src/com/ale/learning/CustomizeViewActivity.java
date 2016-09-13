@@ -25,16 +25,20 @@ public class CustomizeViewActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_customize_view);
 
-		Button btnFont = (Button) findViewById(R.id.btnDrawString);
-		btnFont.setOnClickListener(fontListner);
+		startNewActivityWhenButtonClick(R.id.btnDrawString, FontActivity.class);
+		
+		startNewActivityWhenButtonClick(R.id.btnDrawUnRule, UnRuleActivity.class);
 	}
 
-	private OnClickListener fontListner = new OnClickListener() {
+	private void startNewActivityWhenButtonClick(int buttonId, final Class<?> newActivityCls) {
+		Button btnFont = (Button) findViewById(buttonId);
+		btnFont.setOnClickListener(new OnClickListener() {
 
-		@Override
-		public void onClick(View v) {
-			Intent intent = new Intent(CustomizeViewActivity.this, FontActivity.class);
-			startActivity(intent);
-		}
-	};
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(CustomizeViewActivity.this, newActivityCls);
+				startActivity(intent);
+			}
+		});
+	}
 }
