@@ -2,24 +2,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.ale.learning.DemoSelectionActivity" >
 
-    <Button
-        android:id="@+id/btnDialogDemo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/dialogs" />
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnDialogDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialogs" />
+
+        <Button
+            android:id="@+id/btnCustomizeViewDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customized_views" />
+
+        <Button
+            android:id="@+id/btnCommonControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_controls" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btnCustomizeViewDemo"
+        android:id="@+id/btnListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/customized_views" />
-
-    <Button
-        android:id="@+id/btnCommonControls"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/common_controls" />
+        android:text="@string/list_view" />
 
 </LinearLayout>

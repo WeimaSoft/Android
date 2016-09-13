@@ -30,5 +30,6 @@
     <string name="dialogs">Dialogs</string>
     <string name="title_activity_play">Play</string>
     <string name="title_activity_common_controls">Common Controls</string>
+    <string name="list_view">List View</string>
 
 </resources>
