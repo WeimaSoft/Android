@@ -21,6 +21,8 @@ public class DemoSelectionActivity extends Activity {
 		setUpButtonListner(R.id.btnDialogDemo, setUpClickListner(MainActivity.class));
 		
 		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeViewActivity.class));
+		
+		setUpButtonListner(R.id.btnCommonControls, setUpClickListner(CommonControlsActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)

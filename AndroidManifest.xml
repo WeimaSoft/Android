@@ -45,6 +45,10 @@
             android:name=".PlayActivity"
             android:label="@string/title_activity_play" >
         </activity>
+        <activity
+            android:name=".CommonControlsActivity"
+            android:label="@string/title_activity_common_controls" >
+        </activity>
     </application>
 
 </manifest>
