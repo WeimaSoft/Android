@@ -24,42 +24,26 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CustomizeViewActivity"
             android:label="@string/title_activity_customize_view" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".FontActivity"
             android:label="@string/title_activity_font" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".UnRuleActivity"
             android:label="@string/title_activity_UnRule" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".DrawPictureActivity"
             android:label="@string/title_activity_draw_picture" >
+        </activity>
+        <activity
+            android:name=".PlayActivity"
+            android:label="@string/title_activity_play" >
         </activity>
     </application>
 

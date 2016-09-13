@@ -25,5 +25,10 @@
     <string name="right_turn">Right turn</string>
     <string name="minsize">Minsize</string>
     <string name="maxsize">MaxSize</string>
+    <string name="common_controls">Common Controls</string>
+    <string name="customized_views">Customized Views</string>
+    <string name="dialogs">Dialogs</string>
+    <string name="title_activity_play">Play</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
