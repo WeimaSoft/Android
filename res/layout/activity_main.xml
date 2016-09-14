@@ -29,10 +29,19 @@
             android:text="@string/activity_main_button_label_common_controls" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnmainListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_main_button_label_list_view" />
+    <LinearLayout>
+
+        <Button
+            android:id="@+id/btnmainListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_label_list_view" />
+        
+        <Button
+            android:id="@+id/btnmainDataStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_label_datastore" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -39,6 +39,7 @@
     <string name="activity_listview_button_label_header">Header List View</string>
     <string name="activity_listview_button_label_baseadapter">Base Adapter</string>
     <string name="activity_datastore_title">Data Store</string>
+    <string name="activity_main_button_label_datastore">Data Store</string>
     <string name="activity_datastore_button_label_sharedpreferences">Shared Preferences</string>
     <string name="activity_datastore_button_label_localdata">Local Data</string>
     <string name="activity_datastore_button_label_localres">Local Res</string>
