@@ -11,28 +11,22 @@
         android:layout_height="wrap_content"
         android:text="@string/simple_list_view" />
 
-     <Button
+    <Button
         android:id="@+id/btnHeaderListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/header_list_view" />
-     
-      <Button
-        android:id="@+id/btnPictureListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/picture_list_view" />
-      
-       <Button
+
+    <Button
         android:id="@+id/btnBaseAdapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/base_adapter" />
-       
-        <Button
+
+    <Button
         android:id="@+id/btnArrayAdapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/array_adapter" />
-    
+
 </LinearLayout>

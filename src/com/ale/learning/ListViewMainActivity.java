@@ -1,5 +1,6 @@
 package com.ale.learning;
 
+import com.ale.learning.listview.CustomizeBaseAdapterActivity;
 import com.ale.learning.listview.HeaderListViewActivity;
 import com.ale.learning.listview.SimpleListViewActivity;
 
@@ -22,6 +23,8 @@ public class ListViewMainActivity extends Activity {
 		setUpButtonListner(R.id.btnSimpleListView, setUpClickListner(SimpleListViewActivity.class));
 		
 		setUpButtonListner(R.id.btnHeaderListView, setUpClickListner(HeaderListViewActivity.class));
+		
+		setUpButtonListner(R.id.btnBaseAdapter, setUpClickListner(CustomizeBaseAdapterActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)

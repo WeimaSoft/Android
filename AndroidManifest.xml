@@ -58,8 +58,12 @@
             android:label="@string/title_simple_list_view_main" >
         </activity>
         <activity
-            android:name="com.ale.learning.listview.HeaderListViewActivity"
+            android:name=".listview.HeaderListViewActivity"
             android:label="@string/title_activity_header_list_view" >
+        </activity>
+        <activity
+            android:name="com.ale.learning.listview.CustomizeBaseAdapterActivity"
+            android:label="@string/title_activity_customize_base_adapter" >
         </activity>
     </application>
 

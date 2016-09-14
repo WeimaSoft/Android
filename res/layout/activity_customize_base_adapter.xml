@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ale.learning.listview.CustomizeBaseAdapterActivity" >
+
+    <ImageView
+        android:id="@+id/customize_base_adapter_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:padding="2dip"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id = "@+id/customize_base_adapter_text1"
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@+id/customize_base_adapter_img"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:textSize="15dip"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
