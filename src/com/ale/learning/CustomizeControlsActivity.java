@@ -4,26 +4,11 @@ import com.ale.learning.customizedcontrols.DrawPictureActivity;
 import com.ale.learning.customizedcontrols.FontActivity;
 import com.ale.learning.customizedcontrols.PlayActivity;
 import com.ale.learning.customizedcontrols.UnRuleActivity;
+import com.ale.learning.util.BaseActivity;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
-public class CustomizeControlsActivity extends Activity {
+public class CustomizeControlsActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,17 +22,5 @@ public class CustomizeControlsActivity extends Activity {
 		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsDrawPicture, DrawPictureActivity.class);
 		
 		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsPlay, PlayActivity.class);
-	}
-
-	private void startNewActivityWhenButtonClick(int buttonId, final Class<?> newActivityCls) {
-		Button btnFont = (Button) findViewById(buttonId);
-		btnFont.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(CustomizeControlsActivity.this, newActivityCls);
-				startActivity(intent);
-			}
-		});
 	}
 }

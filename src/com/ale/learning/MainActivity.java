@@ -1,48 +1,25 @@
 package com.ale.learning;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import com.ale.learning.util.BaseActivity;
 
-public class MainActivity extends Activity {
+import android.os.Bundle;
+
+public class MainActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		setUpButtonListner(R.id.btnmainDialogDemo, setUpClickListner(DialogActivity.class));
+		startNewActivityWhenButtonClick(R.id.btnmainDialogDemo, DialogActivity.class);
 		
-		setUpButtonListner(R.id.btnmainCustomizeViewDemo, setUpClickListner(CustomizeControlsActivity.class));
+		startNewActivityWhenButtonClick(R.id.btnmainCustomizeViewDemo, CustomizeControlsActivity.class);
 		
-		setUpButtonListner(R.id.btnmainCommonControls, setUpClickListner(CommonControlsActivity.class));
+		startNewActivityWhenButtonClick(R.id.btnmainCommonControls, CommonControlsActivity.class);
 		
-		setUpButtonListner(R.id.btnmainListView, setUpClickListner(ListViewActivity.class));
+		startNewActivityWhenButtonClick(R.id.btnmainListView, ListViewActivity.class);
 		
-		setUpButtonListner(R.id.btnmainDataStore, setUpClickListner(DataStoreActivity.class));
-	}
-	
-	private OnClickListener setUpClickListner(final Class<?> classRef)
-	{
-		return new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this, classRef);
-				startActivity(intent);
-			}
-		};
-	}
-	
-	private void setUpButtonListner(int buttonId, OnClickListener listner) {
-		Button btnList = (Button) findViewById(buttonId);
-		btnList.setOnClickListener(listner);
+		startNewActivityWhenButtonClick(R.id.btnmainDataStore, DataStoreActivity.class);
+		
 	}
 }
