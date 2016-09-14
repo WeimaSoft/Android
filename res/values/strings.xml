@@ -13,7 +13,6 @@
     <string name="title_activity_simple_list_view">Simple List View</string>
     <string name="title_activity_header_list_view">Header List</string>
     <string name="title_activity_customize_base_adapter">Customize Base Adapter List View</string>
-    
     <string name="lblDialogOKCancel">Dialog OK Cancel</string>
     <string name="lblDialogMultipleButtons">Dialog Multiple Buttons</string>
     <string name="lblDialogList">Dialog List</string>
@@ -26,22 +25,18 @@
     <string name="lblCustomizedControlsDrawUnRule">Draw UnRule</string>
     <string name="lblCustomizedControlsDrawPicture">Draw Picture</string>
     <string name="lblCustomizedControlsPlay">Draw Play</string>
-    <string name="main_button_label_common_controls">Controls</string>
-    <string name="main_button_label_customized_controls">Customized Views</string>
-    <string name="main_button_label_dialogs">Dialogs</string>
-    <string name="main_button_label_list_view">List View</string>
-    
-    <string name="drawpictures_button_label_move_to_left">Move to Left</string>
-    <string name="drawpictures_button_label_move_to_right">Move to Right</string>
-    <string name="drawpictures_button_label_left_turn">Left turn</string>
-    <string name="drawpictures_button_label_right_turn">Right turn</string>
-    <string name="drawpictures_button_label_minsize">Minsize</string>
-    <string name="drawpictures_button_label_maxsize">MaxSize</string>
-    
-    
+    <string name="activity_main_button_label_common_controls">Controls</string>
+    <string name="activity_main_button_label_customized_controls">Customized Views</string>
+    <string name="activity_main_button_label_dialogs">Dialogs</string>
+    <string name="activity_main_button_label_list_view">List View</string>
+    <string name="activity_drawpictures_button_label_move_to_left">Move to Left</string>
+    <string name="activity_drawpictures_button_label_move_to_right">Move to Right</string>
+    <string name="activity_drawpictures_button_label_left_turn">Left turn</string>
+    <string name="activity_drawpictures_button_label_right_turn">Right turn</string>
+    <string name="activity_drawpictures_button_label_minsize">Minsize</string>
+    <string name="activity_drawpictures_button_label_maxsize">MaxSize</string>
     <string name="listview_simple">Simple List View</string>
     <string name="listview_header">Header List View</string>
     <string name="listview_baseadapter">Base Adapter</string>
-    
 
 </resources>
