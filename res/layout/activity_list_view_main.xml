@@ -22,11 +22,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/base_adapter" />
-
-    <Button
-        android:id="@+id/btnArrayAdapter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/array_adapter" />
-
 </LinearLayout>
