@@ -53,6 +53,10 @@
             android:name=".ListViewMainActivity"
             android:label="@string/title_activity_list_view_main" >
         </activity>
+        <activity
+            android:name=".listview.SimpleListViewActivity"
+            android:label="@string/title_simple_list_view_main" >
+        </activity>
     </application>
 
 </manifest>

@@ -37,5 +37,6 @@
     <string name="picture_list_view">Picture List View</string>
     <string name="base_adapter">Base Adapter</string>
     <string name="array_adapter">Array Adapter</string>
+    <string name="title_simple_list_view_main">Simple List View</string>
 
 </resources>
