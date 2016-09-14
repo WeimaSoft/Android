@@ -1,9 +1,9 @@
 package com.ale.learning;
 
+import com.ale.learning.listview.SimpleListViewActivity;
+
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,20 +11,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class DemoSelectionActivity extends Activity {
+public class ListViewMainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_demo_selection);
+		setContentView(R.layout.activity_list_view_main);
 		
-		setUpButtonListner(R.id.btnDialogDemo, setUpClickListner(MainActivity.class));
-		
-		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeViewActivity.class));
-		
-		setUpButtonListner(R.id.btnCommonControls, setUpClickListner(CommonControlsActivity.class));
-		
-		setUpButtonListner(R.id.btnListView, setUpClickListner(ListViewMainActivity.class));
+		setUpButtonListner(R.id.btnSimpleListView, setUpClickListner(SimpleListViewActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)
@@ -33,7 +27,7 @@ public class DemoSelectionActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(DemoSelectionActivity.this, classRef);
+				Intent intent = new Intent(ListViewMainActivity.this, classRef);
 				startActivity(intent);
 			}
 		};

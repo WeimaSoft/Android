@@ -49,6 +49,10 @@
             android:name=".CommonControlsActivity"
             android:label="@string/title_activity_common_controls" >
         </activity>
+        <activity
+            android:name=".ListViewMainActivity"
+            android:label="@string/title_activity_list_view_main" >
+        </activity>
     </application>
 
 </manifest>
