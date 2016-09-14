@@ -13,8 +13,8 @@
         android:label="@string/title_activity_main"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".DemoSelectionActivity"
-            android:label="@string/title_activity_demo_selection" >
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,11 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:name=".DialogActivity"
+            android:label="@string/title_activity_dialog" >
         </activity>
         <activity
-            android:name=".CustomizeViewActivity"
+            android:name=".CustomizeControlsActivity"
             android:label="@string/title_activity_customize_view" >
         </activity>
         <activity

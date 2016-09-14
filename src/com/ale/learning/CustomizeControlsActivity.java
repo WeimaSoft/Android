@@ -18,12 +18,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class CustomizeViewActivity extends Activity {
+public class CustomizeControlsActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_customize_view);
+		setContentView(R.layout.activity_customize_controls);
 
 		startNewActivityWhenButtonClick(R.id.btnDrawString, FontActivity.class);
 		
@@ -40,7 +40,7 @@ public class CustomizeViewActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(CustomizeViewActivity.this, newActivityCls);
+				Intent intent = new Intent(CustomizeControlsActivity.this, newActivityCls);
 				startActivity(intent);
 			}
 		});

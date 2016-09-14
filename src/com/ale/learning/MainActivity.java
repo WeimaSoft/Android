@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 		
 		setUpButtonListner(R.id.btnDialogDemo, setUpClickListner(DialogActivity.class));
 		
-		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeViewActivity.class));
+		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeControlsActivity.class));
 		
 		setUpButtonListner(R.id.btnCommonControls, setUpClickListner(CommonControlsActivity.class));
 		
