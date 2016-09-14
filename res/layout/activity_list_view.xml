@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ale.learning.ListViewMainActivity" >
+    tools:context="com.ale.learning.ListViewActivity" >
 
     <Button
         android:id="@+id/btnSimpleListView"

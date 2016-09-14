@@ -30,21 +30,21 @@ public class DialogActivity extends Activity implements Runnable {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dialog);
 
-		setUpButtonListner(R.id.btnOKCancel, okCancelListner);
+		setUpButtonListner(R.id.btnDialogOKCancel, okCancelListner);
 
-		setUpButtonListner(R.id.btnMultipleButtons, multiButtonsListner);
+		setUpButtonListner(R.id.btnDialogMultipleButtons, multiButtonsListner);
 
-		setUpButtonListner(R.id.btnList, listListner);
+		setUpButtonListner(R.id.btnDialogList, listListner);
 
-		setUpButtonListner(R.id.btnSingleOption, singleOptionListner);
+		setUpButtonListner(R.id.btnDialogSingleOption, singleOptionListner);
 
-		setUpButtonListner(R.id.btnProgress, progressListner);
+		setUpButtonListner(R.id.btnDialogProgress, progressListner);
 
-		setUpButtonListner(R.id.btnMultipleOptions, multipleOptionsListner);
+		setUpButtonListner(R.id.btnDialogMultipleOptions, multipleOptionsListner);
 
-		setUpButtonListner(R.id.btnReadProgress, readProgressListner);
+		setUpButtonListner(R.id.btnDialogReadProgress, readProgressListner);
 
-		setUpButtonListner(R.id.btnCustomize, customizeListner);
+		setUpButtonListner(R.id.btnDialogCustomize, customizeListner);
 	}
 
 	public void run() {
@@ -66,7 +66,7 @@ public class DialogActivity extends Activity implements Runnable {
 		public void onClick(View v) {
 			AlertDialog.Builder builder = getBuilder("Customized Dialog");
 			LayoutInflater fac = LayoutInflater.from(DialogActivity.this);
-			final View dialogView = fac.inflate(R.layout.customize_layout, null);
+			final View dialogView = fac.inflate(R.layout.dialog_customize_layout, null);
 			builder.setView(dialogView);
 			setUpButtons(builder, false);
 		}

@@ -1,7 +1,5 @@
 package com.ale.learning.customizedcontrols;
 
-import com.ale.learning.customizedcontrols.FontActivity.FontView;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;

@@ -3,19 +3,21 @@
 
     <string name="title_activity_main">Main</string>
     <string name="title_activity_dialog">Demo Dialog</string>
-    <string name="lblOKCancel">Dialog OK Cancel</string>
-    <string name="lblMultipleButtons">Dialog Multiple Buttons</string>
-    <string name="lblList">Dialog List</string>
-    <string name="lblProgress">Dialog Progress</string>
-    <string name="lblSingleOption">Dialog Single Option</string>
-    <string name="lblMultipleOptions">Dialog Multiple Options</string>
-    <string name="lblCustomize">Dialog Customized</string>
-    <string name="lblReadProgress">Dialog Read Progress</string>
-    <string name="title_activity_customize_view">Customize Views</string>
-    <string name="lblDrawString">Draw String</string>
-    <string name="lblDrawUnRule">Draw UnRule</string>
-    <string name="lblDrawPicture">Draw Picture</string>
-    <string name="lblPlay">Draw Play</string>
+    <string name="title_activity_customize_controls">Demo Customize Controls</string>
+    
+    <string name="lblDialogOKCancel">Dialog OK Cancel</string>
+    <string name="lblDialogMultipleButtons">Dialog Multiple Buttons</string>
+    <string name="lblDialogList">Dialog List</string>
+    <string name="lblDialogProgress">Dialog Progress</string>
+    <string name="lblDialogSingleOption">Dialog Single Option</string>
+    <string name="lblDialogMultipleOptions">Dialog Multiple Options</string>
+    <string name="lblDialogCustomize">Dialog Customized</string>
+    <string name="lblDialogReadProgress">Dialog Read Progress</string>
+    <string name="lblCustomizedControlsDrawString">Draw String</string>
+    <string name="lblCustomizedControlsDrawUnRule">Draw UnRule</string>
+    <string name="lblCustomizedControlsDrawPicture">Draw Picture</string>
+    <string name="lblCustomizedControlsPlay">Draw Play</string>
+    
     <string name="title_activity_font">Draw Font</string>
     <string name="title_activity_UnRule">Draw UnRule</string>
     <string name="title_activity_draw_picture">Draw Picture</string>

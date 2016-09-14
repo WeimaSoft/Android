@@ -58,7 +58,7 @@ public class CustomizeBaseAdapterActivity extends ListActivity {
 			ImageView iamge = null;
 			TextView title = null;
 			if (convertView == null) {
-				convertView = LayoutInflater.from(_context).inflate(R.layout.activity_customize_base_adapter, null);
+				convertView = LayoutInflater.from(_context).inflate(R.layout.listview_base_adapter, null);
 				iamge = (ImageView) convertView.findViewById(R.id.customize_base_adapter_img);
 				title = (TextView) convertView.findViewById(R.id.customize_base_adapter_text1);
 			}

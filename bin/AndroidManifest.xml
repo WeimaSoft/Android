@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".CustomizeControlsActivity"
-            android:label="@string/title_activity_customize_view" >
+            android:label="@string/title_activity_customize_controls" >
         </activity>
         <activity
             android:name=".ListViewActivity"

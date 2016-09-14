@@ -30,13 +30,13 @@ public class CustomizeControlsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_customize_controls);
 
-		startNewActivityWhenButtonClick(R.id.btnDrawString, FontActivity.class);
+		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsDrawString, FontActivity.class);
 		
-		startNewActivityWhenButtonClick(R.id.btnDrawUnRule, UnRuleActivity.class);
+		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsDrawUnRule, UnRuleActivity.class);
 		
-		startNewActivityWhenButtonClick(R.id.btnDrawPicture, DrawPictureActivity.class);
+		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsDrawPicture, DrawPictureActivity.class);
 		
-		startNewActivityWhenButtonClick(R.id.btnPlay, PlayActivity.class);
+		startNewActivityWhenButtonClick(R.id.btnCustomizedControlsPlay, PlayActivity.class);
 	}
 
 	private void startNewActivityWhenButtonClick(int buttonId, final Class<?> newActivityCls) {

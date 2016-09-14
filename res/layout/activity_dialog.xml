@@ -6,51 +6,51 @@
     tools:context="com.ale.learning.DialogActivity" >
 
     <Button
-        android:id="@+id/btnOKCancel"
+        android:id="@+id/btnDialogOKCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblOKCancel" />
+        android:text="@string/lblDialogOKCancel" />
     
     <Button
-        android:id="@+id/btnMultipleButtons"
+        android:id="@+id/btnDialogMultipleButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblMultipleButtons" />
+        android:text="@string/lblDialogMultipleButtons" />
     
     <Button
-        android:id="@+id/btnList"
+        android:id="@+id/btnDialogList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblList" />
+        android:text="@string/lblDialogList" />
     
     <Button
-        android:id="@+id/btnProgress"
+        android:id="@+id/btnDialogProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblProgress" />
+        android:text="@string/lblDialogProgress" />
     
     <Button
-        android:id="@+id/btnSingleOption"
+        android:id="@+id/btnDialogSingleOption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblSingleOption" />
+        android:text="@string/lblDialogSingleOption" />
     
     <Button
-        android:id="@+id/btnMultipleOptions"
+        android:id="@+id/btnDialogMultipleOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblMultipleOptions" />
+        android:text="@string/lblDialogMultipleOptions" />
     
     <Button
-        android:id="@+id/btnCustomize"
+        android:id="@+id/btnDialogCustomize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCustomize" />
+        android:text="@string/lblDialogCustomize" />
     
     <Button
-        android:id="@+id/btnReadProgress"
+        android:id="@+id/btnDialogReadProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblReadProgress" />
+        android:text="@string/lblDialogReadProgress" />
 
 </LinearLayout>

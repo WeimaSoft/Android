@@ -6,26 +6,26 @@
     tools:context="com.ale.learning.MainActivity" >
 
     <Button
-        android:id="@+id/btnDrawString"
+        android:id="@+id/btnCustomizedControlsDrawString"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDrawString" />
+        android:text="@string/lblCustomizedControlsDrawString" />
     
     <Button
-        android:id="@+id/btnDrawUnRule"
+        android:id="@+id/btnCustomizedControlsDrawUnRule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDrawUnRule" />
+        android:text="@string/lblCustomizedControlsDrawUnRule" />
     
     <Button
-        android:id="@+id/btnDrawPicture"
+        android:id="@+id/btnCustomizedControlsDrawPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDrawPicture" />
+        android:text="@string/lblCustomizedControlsDrawPicture" />
     
     <Button
-        android:id="@+id/btnPlay"
+        android:id="@+id/btnCustomizedControlsPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblPlay" />
+        android:text="@string/lblCustomizedControlsPlay" />
 </LinearLayout>

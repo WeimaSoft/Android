@@ -50,7 +50,7 @@ public class FontActivity extends Activity{
 			canvas.drawText("Font size is 18", 0, 90, paint);
 			
 			paint.setColor(Color.YELLOW);
-            canvas.drawText(getResources().getString(R.string.lblCustomize), 0, 120, paint);
+            canvas.drawText(getResources().getString(R.string.lblDialogCustomize), 0, 120, paint);
             super.onDraw(canvas);
 		}
 	}
