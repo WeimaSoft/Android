@@ -9,48 +9,48 @@
         android:id="@+id/btnDialogOKCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogOKCancel" />
+        android:text="@string/activity_dialog_button_label_okcancel" />
     
     <Button
         android:id="@+id/btnDialogMultipleButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogMultipleButtons" />
+        android:text="@string/activity_dialog_button_label_multiplebuttons" />
     
     <Button
         android:id="@+id/btnDialogList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogList" />
+        android:text="@string/activity_dialog_button_label_list" />
     
     <Button
         android:id="@+id/btnDialogProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogProgress" />
+        android:text="@string/activity_dialog_button_label_progress" />
     
     <Button
         android:id="@+id/btnDialogSingleOption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogSingleOption" />
+        android:text="@string/activity_dialog_button_label_singleoption" />
     
     <Button
         android:id="@+id/btnDialogMultipleOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogMultipleOptions" />
+        android:text="@string/activity_dialog_button_label_multipleoptions" />
     
     <Button
         android:id="@+id/btnDialogCustomize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogCustomize" />
+        android:text="@string/activity_dialog_button_label_customize" />
     
     <Button
         android:id="@+id/btnDialogReadProgress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDialogReadProgress" />
+        android:text="@string/activity_dialog_button_label_readprogress" />
 
 </LinearLayout>

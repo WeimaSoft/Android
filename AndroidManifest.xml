@@ -10,11 +10,11 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/title_activity_main"
+        android:label="@string/activity_main_title"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/activity_main_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,47 +23,47 @@
         </activity>
         <activity
             android:name=".DialogActivity"
-            android:label="@string/title_activity_dialog" >
+            android:label="@string/activity_dialog_title" >
         </activity>
         <activity
             android:name=".CommonControlsActivity"
-            android:label="@string/title_activity_common_controls" >
+            android:label="@string/activity_commoncontrols_title" >
         </activity>
         <activity
             android:name=".CustomizeControlsActivity"
-            android:label="@string/title_activity_customize_controls" >
+            android:label="@string/activity_customizedcontrols_title" >
         </activity>
         <activity
             android:name=".ListViewActivity"
-            android:label="@string/title_activity_list_view" >
+            android:label="@string/activity_listview_title" >
         </activity>
         <activity
             android:name=".customizedcontrols.FontActivity"
-            android:label="@string/title_activity_font" >
+            android:label="@string/activity_customizedcontrols_font_title" >
         </activity>
         <activity
             android:name=".customizedcontrols.UnRuleActivity"
-            android:label="@string/title_activity_UnRule" >
+            android:label="@string/activity_customizedcontrols_unrule_title" >
         </activity>
         <activity
             android:name=".customizedcontrols.DrawPictureActivity"
-            android:label="@string/title_activity_draw_picture" >
+            android:label="@string/activity_customizedcontrols_drawpicture_title" >
         </activity>
         <activity
             android:name=".customizedcontrols.PlayActivity"
-            android:label="@string/title_activity_play" >
+            android:label="@string/activity_customizedcontrols_play_title" >
         </activity>
         <activity
             android:name=".listview.SimpleListViewActivity"
-            android:label="@string/title_activity_simple_list_view" >
+            android:label="@string/activity_listview_simple_title" >
         </activity>
         <activity
             android:name=".listview.HeaderListViewActivity"
-            android:label="@string/title_activity_header_list_view" >
+            android:label="@string/activity_listview_header_title" >
         </activity>
         <activity
             android:name=".listview.CustomizeBaseAdapterActivity"
-            android:label="@string/title_activity_customize_base_adapter" >
+            android:label="@string/activity_listview_baseadapter_title" >
         </activity>
     </application>
 

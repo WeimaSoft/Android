@@ -9,23 +9,23 @@
         android:id="@+id/btnCustomizedControlsDrawString"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCustomizedControlsDrawString" />
+        android:text="@string/activity_customizedcontrols_button_label_drawstring" />
     
     <Button
         android:id="@+id/btnCustomizedControlsDrawUnRule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCustomizedControlsDrawUnRule" />
+        android:text="@string/activity_customizedcontrols_button_label_drawunrule" />
     
     <Button
         android:id="@+id/btnCustomizedControlsDrawPicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCustomizedControlsDrawPicture" />
+        android:text="@string/activity_customizedcontrols_button_label_drawpicture" />
     
     <Button
         android:id="@+id/btnCustomizedControlsPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCustomizedControlsPlay" />
+        android:text="@string/activity_customizedcontrols_button_label_play" />
 </LinearLayout>
