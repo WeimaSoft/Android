@@ -6,20 +6,20 @@
     tools:context="com.ale.learning.ListViewActivity" >
 
     <Button
-        android:id="@+id/btnSimpleListView"
+        android:id="@+id/btnlistviewSimple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/simple_list_view" />
+        android:text="@string/listview_simple" />
 
     <Button
-        android:id="@+id/btnHeaderListView"
+        android:id="@+id/btnlistviewHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/header_list_view" />
+        android:text="@string/listview_header" />
 
     <Button
-        android:id="@+id/btnBaseAdapter"
+        android:id="@+id/btnlistviewBaseAdapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/base_adapter" />
+        android:text="@string/listview_baseadapter" />
 </LinearLayout>

@@ -4,6 +4,15 @@
     <string name="title_activity_main">Main</string>
     <string name="title_activity_dialog">Demo Dialog</string>
     <string name="title_activity_customize_controls">Demo Customize Controls</string>
+    <string name="title_activity_common_controls">Common Controls</string>
+    <string name="title_activity_list_view">List View</string>
+    <string name="title_activity_font">Draw Font</string>
+    <string name="title_activity_UnRule">Draw UnRule</string>
+    <string name="title_activity_draw_picture">Draw Picture</string>
+    <string name="title_activity_play">Play</string>
+    <string name="title_activity_simple_list_view">Simple List View</string>
+    <string name="title_activity_header_list_view">Header List</string>
+    <string name="title_activity_customize_base_adapter">Customize Base Adapter List View</string>
     
     <string name="lblDialogOKCancel">Dialog OK Cancel</string>
     <string name="lblDialogMultipleButtons">Dialog Multiple Buttons</string>
@@ -17,30 +26,22 @@
     <string name="lblCustomizedControlsDrawUnRule">Draw UnRule</string>
     <string name="lblCustomizedControlsDrawPicture">Draw Picture</string>
     <string name="lblCustomizedControlsPlay">Draw Play</string>
+    <string name="main_button_label_common_controls">Controls</string>
+    <string name="main_button_label_customized_controls">Customized Views</string>
+    <string name="main_button_label_dialogs">Dialogs</string>
+    <string name="main_button_label_list_view">List View</string>
     
-    <string name="title_activity_font">Draw Font</string>
-    <string name="title_activity_UnRule">Draw UnRule</string>
-    <string name="title_activity_draw_picture">Draw Picture</string>
-    <string name="move_to_left">Move to Left</string>
-    <string name="move_to_right">Move to Right</string>
-    <string name="left_turn">Left turn</string>
-    <string name="right_turn">Right turn</string>
-    <string name="minsize">Minsize</string>
-    <string name="maxsize">MaxSize</string>
-    <string name="common_controls">Controls</string>
-    <string name="customized_views">Customized Views</string>
-    <string name="dialogs">Dialogs</string>
-    <string name="title_activity_play">Play</string>
-    <string name="title_activity_common_controls">Common Controls</string>
-    <string name="list_view">List View</string>
-    <string name="title_activity_list_view_main">List View</string>
-    <string name="simple_list_view">Simple List View</string>
-    <string name="header_list_view">Header List View</string>
-    <string name="picture_list_view">Picture List View</string>
-    <string name="base_adapter">Base Adapter</string>
-    <string name="array_adapter">Array Adapter</string>
-    <string name="title_simple_list_view_main">Simple List View</string>
-    <string name="title_activity_header_list_view">Header List</string>
-    <string name="title_activity_customize_base_adapter">Customize Base Adapter List View</string>
+    <string name="drawpictures_button_label_move_to_left">Move to Left</string>
+    <string name="drawpictures_button_label_move_to_right">Move to Right</string>
+    <string name="drawpictures_button_label_left_turn">Left turn</string>
+    <string name="drawpictures_button_label_right_turn">Right turn</string>
+    <string name="drawpictures_button_label_minsize">Minsize</string>
+    <string name="drawpictures_button_label_maxsize">MaxSize</string>
+    
+    
+    <string name="listview_simple">Simple List View</string>
+    <string name="listview_header">Header List View</string>
+    <string name="listview_baseadapter">Base Adapter</string>
+    
 
 </resources>

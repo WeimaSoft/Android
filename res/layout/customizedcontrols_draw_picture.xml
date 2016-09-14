@@ -6,39 +6,39 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/buttonLeft"
+        android:id="@+id/btnDrawPictureLeft"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_left" />
+        android:text="@string/drawpictures_button_label_move_to_left" />
 
     <Button
-        android:id="@+id/buttonRight"
+        android:id="@+id/btnDrawPictureRight"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/move_to_right" />
+        android:text="@string/drawpictures_button_label_move_to_right" />
 
     <Button
-        android:id="@+id/buttonRotationLeft"
+        android:id="@+id/btnDrawPictureRotationLeft"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/left_turn" />
+        android:text="@string/drawpictures_button_label_left_turn" />
 
     <Button
-        android:id="@+id/buttonRotationRight"
+        android:id="@+id/btnDrawPictureRotationRight"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/right_turn" />
+        android:text="@string/drawpictures_button_label_right_turn" />
 
     <Button
-        android:id="@+id/buttonNarrow"
+        android:id="@+id/btnDrawPictureNarrow"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/minsize" />
+        android:text="@string/drawpictures_button_label_minsize" />
 
     <Button
-        android:id="@+id/buttonEnlarge"
+        android:id="@+id/btnDrawPictureEnlarge"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/maxsize" />
+        android:text="@string/drawpictures_button_label_maxsize" />
 
 </LinearLayout>

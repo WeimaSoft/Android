@@ -18,13 +18,13 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		setUpButtonListner(R.id.btnDialogDemo, setUpClickListner(DialogActivity.class));
+		setUpButtonListner(R.id.btnmainDialogDemo, setUpClickListner(DialogActivity.class));
 		
-		setUpButtonListner(R.id.btnCustomizeViewDemo, setUpClickListner(CustomizeControlsActivity.class));
+		setUpButtonListner(R.id.btnmainCustomizeViewDemo, setUpClickListner(CustomizeControlsActivity.class));
 		
-		setUpButtonListner(R.id.btnCommonControls, setUpClickListner(CommonControlsActivity.class));
+		setUpButtonListner(R.id.btnmainCommonControls, setUpClickListner(CommonControlsActivity.class));
 		
-		setUpButtonListner(R.id.btnListView, setUpClickListner(ListViewActivity.class));
+		setUpButtonListner(R.id.btnmainListView, setUpClickListner(ListViewActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)

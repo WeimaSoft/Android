@@ -35,7 +35,7 @@
         </activity>
         <activity
             android:name=".ListViewActivity"
-            android:label="@string/title_activity_list_view_main" >
+            android:label="@string/title_activity_list_view" >
         </activity>
         <activity
             android:name=".customizedcontrols.FontActivity"
@@ -55,7 +55,7 @@
         </activity>
         <activity
             android:name=".listview.SimpleListViewActivity"
-            android:label="@string/title_simple_list_view_main" >
+            android:label="@string/title_activity_simple_list_view" >
         </activity>
         <activity
             android:name=".listview.HeaderListViewActivity"

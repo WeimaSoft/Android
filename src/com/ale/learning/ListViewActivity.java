@@ -20,11 +20,11 @@ public class ListViewActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_list_view);
 		
-		setUpButtonListner(R.id.btnSimpleListView, setUpClickListner(SimpleListViewActivity.class));
+		setUpButtonListner(R.id.btnlistviewSimple, setUpClickListner(SimpleListViewActivity.class));
 		
-		setUpButtonListner(R.id.btnHeaderListView, setUpClickListner(HeaderListViewActivity.class));
+		setUpButtonListner(R.id.btnlistviewHeader, setUpClickListner(HeaderListViewActivity.class));
 		
-		setUpButtonListner(R.id.btnBaseAdapter, setUpClickListner(CustomizeBaseAdapterActivity.class));
+		setUpButtonListner(R.id.btnlistviewBaseAdapter, setUpClickListner(CustomizeBaseAdapterActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)

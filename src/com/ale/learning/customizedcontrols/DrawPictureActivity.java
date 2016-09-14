@@ -34,7 +34,7 @@ public class DrawPictureActivity extends Activity {
 		LinearLayout layout = (LinearLayout) findViewById(R.id.imageLayout);
 		layout.addView(imageView);
 
-		Button botton0 = (Button) findViewById(R.id.buttonLeft);
+		Button botton0 = (Button) findViewById(R.id.btnDrawPictureLeft);
 		botton0.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -42,14 +42,14 @@ public class DrawPictureActivity extends Activity {
 			}
 		});
 
-		Button botton1 = (Button) findViewById(R.id.buttonRight);
+		Button botton1 = (Button) findViewById(R.id.btnDrawPictureRight);
 		botton1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				imageView.move2Right();
 			}
 		});
-		Button botton2 = (Button) findViewById(R.id.buttonRotationLeft);
+		Button botton2 = (Button) findViewById(R.id.btnDrawPictureRotationLeft);
 		botton2.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -57,7 +57,7 @@ public class DrawPictureActivity extends Activity {
 			}
 		});
 
-		Button botton3 = (Button) findViewById(R.id.buttonRotationRight);
+		Button botton3 = (Button) findViewById(R.id.btnDrawPictureRotationRight);
 		botton3.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -65,7 +65,7 @@ public class DrawPictureActivity extends Activity {
 			}
 		});
 
-		Button botton4 = (Button) findViewById(R.id.buttonNarrow);
+		Button botton4 = (Button) findViewById(R.id.btnDrawPictureNarrow);
 		botton4.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -74,7 +74,7 @@ public class DrawPictureActivity extends Activity {
 			}
 		});
 
-		Button botton5 = (Button) findViewById(R.id.buttonEnlarge);
+		Button botton5 = (Button) findViewById(R.id.btnDrawPictureEnlarge);
 		botton5.setOnClickListener(new OnClickListener() {
 
 			@Override
