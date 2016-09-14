@@ -65,6 +65,10 @@
             android:name=".listview.CustomizeBaseAdapterActivity"
             android:label="@string/activity_listview_baseadapter_title" >
         </activity>
+        <activity
+            android:name=".DataStoreActivity"
+            android:label="@string/activity_datastore_title" >
+        </activity>
     </application>
 
 </manifest>
