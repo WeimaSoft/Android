@@ -1,5 +1,10 @@
 package com.ale.learning;
 
+import com.ale.learning.customizedcontrols.DrawPictureActivity;
+import com.ale.learning.customizedcontrols.FontActivity;
+import com.ale.learning.customizedcontrols.PlayActivity;
+import com.ale.learning.customizedcontrols.UnRuleActivity;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

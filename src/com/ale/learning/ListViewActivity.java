@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class ListViewMainActivity extends Activity {
+public class ListViewActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class ListViewMainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(ListViewMainActivity.this, classRef);
+				Intent intent = new Intent(ListViewActivity.this, classRef);
 				startActivity(intent);
 			}
 		};

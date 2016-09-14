@@ -26,32 +26,32 @@
             android:label="@string/title_activity_dialog" >
         </activity>
         <activity
-            android:name=".CustomizeControlsActivity"
-            android:label="@string/title_activity_customize_view" >
-        </activity>
-        <activity
-            android:name=".FontActivity"
-            android:label="@string/title_activity_font" >
-        </activity>
-        <activity
-            android:name=".UnRuleActivity"
-            android:label="@string/title_activity_UnRule" >
-        </activity>
-        <activity
-            android:name=".DrawPictureActivity"
-            android:label="@string/title_activity_draw_picture" >
-        </activity>
-        <activity
-            android:name=".PlayActivity"
-            android:label="@string/title_activity_play" >
-        </activity>
-        <activity
             android:name=".CommonControlsActivity"
             android:label="@string/title_activity_common_controls" >
         </activity>
         <activity
-            android:name=".ListViewMainActivity"
+            android:name=".CustomizeControlsActivity"
+            android:label="@string/title_activity_customize_view" >
+        </activity>
+        <activity
+            android:name=".ListViewActivity"
             android:label="@string/title_activity_list_view_main" >
+        </activity>
+        <activity
+            android:name=".customizedcontrols.FontActivity"
+            android:label="@string/title_activity_font" >
+        </activity>
+        <activity
+            android:name=".customizedcontrols.UnRuleActivity"
+            android:label="@string/title_activity_UnRule" >
+        </activity>
+        <activity
+            android:name=".customizedcontrols.DrawPictureActivity"
+            android:label="@string/title_activity_draw_picture" >
+        </activity>
+        <activity
+            android:name=".customizedcontrols.PlayActivity"
+            android:label="@string/title_activity_play" >
         </activity>
         <activity
             android:name=".listview.SimpleListViewActivity"
@@ -62,7 +62,7 @@
             android:label="@string/title_activity_header_list_view" >
         </activity>
         <activity
-            android:name="com.ale.learning.listview.CustomizeBaseAdapterActivity"
+            android:name=".listview.CustomizeBaseAdapterActivity"
             android:label="@string/title_activity_customize_base_adapter" >
         </activity>
     </application>

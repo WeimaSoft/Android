@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 		
 		setUpButtonListner(R.id.btnCommonControls, setUpClickListner(CommonControlsActivity.class));
 		
-		setUpButtonListner(R.id.btnListView, setUpClickListner(ListViewMainActivity.class));
+		setUpButtonListner(R.id.btnListView, setUpClickListner(ListViewActivity.class));
 	}
 	
 	private OnClickListener setUpClickListner(final Class<?> classRef)

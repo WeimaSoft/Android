@@ -1,4 +1,7 @@
-package com.ale.learning;
+package com.ale.learning.customizedcontrols;
+
+import com.ale.learning.R;
+import com.ale.learning.R.drawable;
 
 import android.app.Activity;
 import android.content.Context;
