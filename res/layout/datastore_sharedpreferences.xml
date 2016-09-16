@@ -1,7 +1,55 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.ale.learning.datastore.SharedPreferencesActivity" >
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblSharedPreferencesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/activity_datastore_sharedpreferences_label_name" />
+
+        <EditText
+            android:id="@+id/txtSharedPreferencesNameInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/lblSharedPreferencesName" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSharedPreferencesSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_datastore_sharedpreferences_button_label_savedata" />
+
+    <Button
+        android:id="@+id/btnSharedPreferencesDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_datastore_sharedpreferences_button_label_displaydata" />
+
+    <Button
+        android:id="@+id/btnSharedPreferencesDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_datastore_sharedpreferences_button_label_deletedata" />
+
+    <Button
+        android:id="@+id/btnSharedPreferencesDeleteFile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_datastore_sharedpreferences_button_label_deletefile" />
+
+    <EditText
+        android:id="@+id/lblSharedPreferencesNameReDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

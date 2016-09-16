@@ -45,5 +45,10 @@
     <string name="activity_datastore_button_label_localres">Local Res</string>
     <string name="activity_datastore_button_label_sdcard">SD Card</string>
     <string name="activity_datastore_sharedpreferences_title">Shared Preferences</string>
+    <string name="activity_datastore_sharedpreferences_label_name">Input Name:</string>
+    <string name="activity_datastore_sharedpreferences_button_label_savedata">Save Data</string>
+    <string name="activity_datastore_sharedpreferences_button_label_displaydata">Display Data</string>
+    <string name="activity_datastore_sharedpreferences_button_label_deletedata">Delete Data</string>
+    <string name="activity_datastore_sharedpreferences_button_label_deletefile">Delete SharePreferences File</string>
 
 </resources>
