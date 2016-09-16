@@ -71,7 +71,7 @@
         </activity>
         <activity
             android:name="com.ale.learning.datastore.SharedPreferencesActivity"
-            android:label="@string/title_activity_shared_preferences" >
+            android:label="@string/activity_datastore_sharedpreferences_title" >
         </activity>
     </application>
 

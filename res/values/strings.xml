@@ -44,7 +44,6 @@
     <string name="activity_datastore_button_label_localdata">Local Data</string>
     <string name="activity_datastore_button_label_localres">Local Res</string>
     <string name="activity_datastore_button_label_sdcard">SD Card</string>
-    <string name="title_activity_shared_preferences">Shared Preferences</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="activity_datastore_sharedpreferences_title">Shared Preferences</string>
 
 </resources>
