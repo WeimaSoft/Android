@@ -11,22 +11,4 @@
         android:layout_height="wrap_content"
         android:text="@string/activity_datastore_button_label_sharedpreferences" />
     
-     <Button
-        android:id="@+id/btnDataStoreLocalData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_datastore_button_label_localdata" />
-     
-     <Button
-        android:id="@+id/btnDataStoreLocalRes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_datastore_button_label_localres" />
-     
-     <Button
-        android:id="@+id/btnDataStoreSDCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/activity_datastore_button_label_sdcard" />
-    
 </LinearLayout>
