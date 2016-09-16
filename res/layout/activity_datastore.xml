@@ -6,7 +6,7 @@
     tools:context="com.ale.learning.DataStoreActivity" >
 
      <Button
-        android:id="@+id/btnDataStoreOKCancel"
+        android:id="@+id/btnDataStoreSharedPreferences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/activity_datastore_button_label_sharedpreferences" />
